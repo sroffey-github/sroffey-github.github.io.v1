@@ -10,3 +10,7 @@ function mobileNavbar() {
         x.className = "topnav";
     }
 }
+
+function copyClipboard() {
+    
+}
