@@ -94,8 +94,8 @@ body {
 }
 
 .container .social-links {
-    text-align: center;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .container .social-links a {
@@ -127,9 +127,5 @@ body {
     }
     .container p {
         font-size: 18px;
-    }
-    .container .social-links {
-        display: grid;
-        grid-template-columns: auto auto auto; /* change if more links added */
     }
 }
