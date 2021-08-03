@@ -57,6 +57,9 @@ body {
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+        background-color: #0A192F;
+        border-bottom: 5px solid #73d0b9;
+        z-index: 2;
 	}
 	.topnav.responsive .icon {
 		position: absolute;
@@ -97,13 +100,16 @@ body {
 }
 
 .container .skills-list li {
-    margin: 1rem;
+    margin: auto;
     color: #73d0b9;
 }
 
 @media only screen and (max-width: 600px) {
     .container {
-        width: 90%;
+        all: unset;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .container h1 {
@@ -113,17 +119,4 @@ body {
     .container p {
         font-size: 12px;
     }
-}
-
-/*
-Remove this line when complete
-*/
-
-.footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: #f2f2f2;
 }

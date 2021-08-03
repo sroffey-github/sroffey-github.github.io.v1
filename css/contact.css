@@ -57,6 +57,9 @@ body {
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+        background-color: #0A192F;
+        border-bottom: 5px solid #73d0b9;
+        z-index: 2;
 	}
 	.topnav.responsive .icon {
 		position: absolute;
@@ -102,8 +105,10 @@ body {
 
 @media only screen and (max-width: 600px) {
     .container {
-        position: fixed;
-        width: 90%;
+        all: unset;
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
     }
     .container h1 {
         font-size: 30px;
@@ -119,17 +124,4 @@ body {
     .container button {
         margin: 1rem;
     }
-}
-
-/*
-Remove this line when complete
-*/
-
-.footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: #f2f2f2;
 }

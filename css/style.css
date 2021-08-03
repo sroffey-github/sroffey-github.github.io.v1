@@ -57,6 +57,9 @@ body {
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+        background-color: #0A192F;
+        border-bottom: 5px solid #73d0b9;
+        z-index: 2;
 	}
 	.topnav.responsive .icon {
 		position: absolute;
@@ -112,6 +115,13 @@ body {
 /* MOBILE STUFF */
 
 @media only screen and (max-width: 600px) {
+    .container {
+        all: unset;
+        position: unset;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .container h1 {
         font-size: 24px;
     }
@@ -120,19 +130,6 @@ body {
     }
     .container .social-links {
         display: grid;
-        grid-template-columns: auto auto auto auto auto; /* change if more links added */
+        grid-template-columns: auto auto auto; /* change if more links added */
     }
-}
-
-/*
-Remove this line when complete
-*/
-
-.footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: #f2f2f2;
 }
