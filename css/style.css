@@ -57,9 +57,11 @@ body {
 	display: none;
 }
 
-.topnav #logo {
-    padding: 0;
-    margin: 0;
+.topnav img {
+    transition: transform .7s ease-in-out;
+}
+.topnav img:hover {
+    transform: rotate(360deg);
 }
 
 .topnav #logo:hover {
@@ -135,14 +137,81 @@ body {
     opacity: .7;
 }
 
+/* LOADER WRAPPER
+.loader-wrapper {
+    text-align: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #73d0b9;
+    top: 50%;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+} */
+
 /* MOBILE STUFF */
 
 @media only screen and (max-width: 600px) {
     .container {
         all: unset;
         position: unset;
-        margin: 0 auto;
         text-align: center;
+        margin: 0 auto;
     }
 
     .container h1 {

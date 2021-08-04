@@ -57,13 +57,11 @@ body {
 	display: none;
 }
 
-.topnav #logo {
-    padding: 0;
-    margin: 0;
+.topnav img {
+    transition: transform .7s ease-in-out;
 }
-
-.topnav #logo:hover {
-    opacity: .7;
+.topnav img:hover {
+    transform: rotate(360deg);
 }
 
 @media screen and (max-width: 600px) {
