@@ -4,8 +4,29 @@
 }
 
 body {
-    background-color: #0A192F;
     font-family: 'Mukta', sans-serif;
+    background: linear-gradient(270deg, #478575, #0a192f);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /* START OF NAVBAR */
@@ -21,6 +42,7 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .topnav .right {
@@ -85,6 +107,7 @@ body {
 
 .container p {
     color: #73d0b9;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 30px;
 }
 
